@@ -1,0 +1,183 @@
+body {
+    background-color: #dddddd;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+    width: 100%;
+    height: 10vh;
+    background-color: #C0EDA6;
+    text-align: center;
+}
+
+.main {
+    width: 100%;
+    height: 80vh;
+    background-color: yellowgreen;
+}
+
+.footer {
+    width: 100%;
+    height: 10vh;
+    background-color: #FFF7BC;
+    text-align: center;
+    
+}
+
+.main_left {
+    width: 25%;
+    height: 100%;
+    background-color: #FF8080;
+    /* display: inline-block; */
+    float: left;
+    text-align: center;
+    
+}
+.main_center {
+    width: 50%;
+    height: 100%;
+    background-color: rosybrown;
+    /* display: inline-block; */
+    float: left;
+    text-align: center;
+}
+.main_right {
+    width: 25%;
+    height: 100%;
+    background-color: #FF8080;
+    /* display: inline-block; */
+    float: left;
+    text-align: center;
+}
+.content_heading {
+    width: calc(100% - 60px);
+    height: calc(20% - 60px);
+    padding: 20px;
+    margin: 10px;
+    background-color: coral;
+    text-align: center;
+    
+    /* display: none; */
+    /* visibility: hidden;
+    opacity: 0; */
+}
+
+.content_box {
+    /* width: 40%; */
+    width: calc(50% - 60px);
+    height: calc(40% - 60px);
+    background-color: #00ffff;
+    float: left;
+    border:5px solid darkgreen;
+    margin: 10px 10px 10px 10px;
+    padding: 15px 15px 15px 15px;
+    background-image: url('https://i.pinimg.com/236x/17/5f/2d/175f2dd9e5c81bd55f5b0b059487446f--ram.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1.0;
+    overflow-y: scroll;
+}
+.content_box div{
+    color: white;
+}
+.content_box > div{
+    color: red;
+}
+.main_right ul {
+    list-style-type: none;
+    color: #00ffff;
+}
+.main_right ul li {
+    border: 1px solid #ffaa00;
+    padding: 10px;
+    margin: 10px;
+}
+.main_right ul li:hover{
+    background-color: magenta;
+}
+.main_right ul li:first-child{
+    font-weight: bold;
+    color: red;
+}
+.main_right ul li:last-child{
+    text-decoration: underline;
+    color: blue ;
+}
+.main_right ul li:nth-child(2n){
+    font-size: 20px;
+}
+.main_right ul li:nth-child(2n+1){
+    font-size: 30px;
+    font-style: italic;
+}
+.main_right ul li:nth-child(3){
+    font-weight: bold;
+    color: green;
+    text-shadow: 10px, 10px, 10px red;
+}
+
+/* 1st child - bold - red
+last child  - underline and blue
+even child - font size 20px
+odd child - font size 20px and text italics
+3rd child - bold green, text-shadow */
+
+/* 16px - 1 rem */
+/* gap, width, height, margin padding - px, rem/em, %, 100vh */
+
+/* #header_div {
+    width: 1200px;
+    height: 100px;
+    background-color: yellow;
+} */
+
+
+.main_left img{
+      width: 100%;
+      /* min-width: 400px;
+    max-width: 1200px; */
+      display: block;
+}
+.main_right img{
+    width: 100%;    
+    display: block;
+}
+.main_left p{
+    color: green;
+    background-color: seagreen;
+    border: 1px solid #FFF7BC;
+    padding: 10px;
+}
+.main_left h1{
+    color: #ffaa00;
+    background-color: aqua;
+    border: 1px solid #FF8080;
+    font-size: 50px;
+    padding: 10px;
+}
+.main_left button{
+    background-color: rgb(255, 127, 161);
+    padding: 10px;
+    border: 2px solid;
+}
+.main_left a {
+    display: block;
+    margin: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.main_right table{
+    background-color: yellow;
+    border: 5px solid #ffaa00;
+}
+.main_right table th{
+    color: azure;
+    font-size: bold;
+    padding: 10px;
+    /* border: 5px solid #0104fd; */
+}

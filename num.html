@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <input type="text" id="prime">
+        <button id="" value="" onclick="Prime()">Prime</button>
+        <button id="even" value="" onclick="isEven()">even</button>
+        <button id="odd" value="" onclick="isOdd()">odd</button>
+        <script>
+            
+            function Prime(temp){
+                var number = document.getElementById('prime').value;
+                var isPrime;
+                for(let i=2; i< number; i++){
+                    isPrime = 1;
+                    for(let j=2; j<i; j++){
+                        if(i % j === 0){
+                            isPrime = 0;
+                            break;
+                        }
+                    }
+                    if(isPrime === 1){
+                        document.write(i + "<br>");
+                    }
+                }
+            }
+            function isEven(){
+                for(var i=1; i <100; i++){
+                    if(i % 2 === 0){
+                        document.write(i + "<br>");
+                    }
+                } 
+            }
+            function isOdd(){
+                for(var i=1; i <100; i++){
+                    if(i % 2 !== 0){
+                        document.write(i + "<br>");
+                    }
+                } 
+            }
+            
+        </script>
+    </body>
+
+</html>

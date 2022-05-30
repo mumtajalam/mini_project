@@ -23,34 +23,19 @@
             <br>
             <br>
             <label for="gender">Gender</label>
-            Mail:-<input type="checkbox" id="gender">
-            Femail:-<input type="checkbox" id="gender">
+            Mail:-<input type="radio" id="gender">
+            Femail:-<input type="radio" id="gender">
             <br>
             <br>
             <label for="dob">DOB</label>
-            <select>
-                <option>jun</option>
-                <option>Feb</option>
-                <option>March</option>
-                <option>Aipril</option>
-            </select>
+            <input type="date" id="dob">
             <br>
             <br>
-            <label for="age">Age</label> 
-            <select>
-                <option>18</option>
-                <option>19</option>
-                <option>20</option>
-                <option>21</option>
-                <option>22</option>
-                <option>23</option>
-                <option>24</option>
-            </select>
-
-            
+            <label for="age">Age</label>
+            <input type="number" id="age" min="18" max="24">
             <br>
             <br>
-            Submit:- <button onclick="fn()">Submit</button>
+            Submit:- <button onclick="alert('hello')">Submit</button>
 
         </form>
     </body>
